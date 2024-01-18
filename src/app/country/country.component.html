@@ -1,0 +1,9 @@
+<div [class]="cssclass">
+{{name}}
+{{totalpopulation}}
+<input [(ngModel)]="mastertax">
+{{mastertax}}
+<app-city [(taxrate)]="mastertax" (popEvent)="addPop($event)" [cityname]="cityone"></app-city>
+<app-city [(taxrate)]="mastertax" (popEvent)="addPop($event)" [cityname]="citytwo"></app-city>
+</div>
+
